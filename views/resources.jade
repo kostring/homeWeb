@@ -1,0 +1,8 @@
+head
+    title Home resources
+body
+    ol
+    each resourceType in resourceTypeList
+        li: a(href='./resource/#{resourceType}') #{resourceType}
+
+    
