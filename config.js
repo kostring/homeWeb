@@ -1,3 +1,7 @@
 var imageConfig = {
-    path: ""
+    path: "C:\\image\\normal\\"
+}
+
+module.exports = {
+    imageConfig: imageConfig
 }
