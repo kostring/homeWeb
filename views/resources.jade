@@ -1,6 +1,11 @@
 head
     title Home resources
+    script.
+        function add(){
+            
+        }
 body
+    div#foo
     ol
     each resourceType in resourceTypeList
         li: a(href='./resources/#{resourceType}') #{resourceType}

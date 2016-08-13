@@ -1,6 +1,16 @@
 head
     title ImageList
+    script.
+        var count = 0;
+        function foo()
+        {
+            alert("foo!" + count.toString());
+            count++;
+        }
 
+        //window.onLoad(alert("what what"));
 body
+    h1#Ahead(onclick="foo()") 111111
+    br
     each imageName in imageList
-        p #{imageName}: 
+        div(id="#{imageName}"): a(href='../images?name=#{imageName}') #{imageName}

@@ -28,6 +28,9 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/resources', resources);
 app.use('/resources/Image', image);
+app.use('/images', function(req, res, next){
+    res.send(req.url);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
